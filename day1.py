@@ -1,9 +1,7 @@
 import os
 
-def get_input(file):
-    fileDir = os.path.dirname(os.path.realpath('__file__'))
-    filename = os.path.join(fileDir, file)
-    with open(filename, 'r') as input_file:
+def get_input(file_name):
+    with open(file_name, 'r') as input_file:
         return list(map(int, input_file.readlines()))
 
 def get_answer_part1():
