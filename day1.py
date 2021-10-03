@@ -1,5 +1,3 @@
-import os
-
 def get_input(file_name):
     with open(file_name, 'r') as input_file:
         return list(map(int, input_file.readlines()))
